@@ -7,6 +7,14 @@ end
 
 gem 'bootstrap', '~> 4.0.0.alpha4'
 
+gem 'omniauth', '~> 1.5.0'
+gem 'omniauth-twitter', '~> 1.0.1'
+
+gem 'rack', '~> 2.0'
+
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
