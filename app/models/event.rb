@@ -1,4 +1,4 @@
-class Event < ApplicationRecord
+class Event < ApplicationRecord::Base
   mount_uploader :event_image, EventImageUploader
 
   has_many :tickets, dependent: :destroy
