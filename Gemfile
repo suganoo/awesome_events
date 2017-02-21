@@ -15,6 +15,9 @@ gem 'rack', '~> 2.0'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 
+gem 'carrierwave', '0.11.0'
+gem 'mini_magick', '3.8.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 

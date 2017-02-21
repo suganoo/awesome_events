@@ -1,4 +1,5 @@
-class User < ApplicationRecord::Base
+# -*- coding: utf-8 -*-
+class User < ApplicationRecord
   before_destroy :check_all_events_finished
 
   has_many :created_events, class_name: 'Event', foreign_key: :owner_id, dependent: :nullify
@@ -26,7 +27,7 @@ class User < ApplicationRecord::Base
     end
 
     if participating_events.where(':now < end_time', now: now).exists?
-      errors[:base] << '未終了の参加イベントが存在します。
+      errors[:base] << '未終了の参加イベントが存在します。'
     end
     errors.blank?
   end
