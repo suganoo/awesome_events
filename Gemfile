@@ -18,6 +18,8 @@ gem 'twitter-bootstrap-rails'
 gem 'carrierwave', '0.11.0'
 gem 'mini_magick', '3.8.0'
 
+gem 'ransack'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 
