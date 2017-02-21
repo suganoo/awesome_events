@@ -6,8 +6,14 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+  resource :user, only: :destroy do
+    get 'retire'
+  end
+
   resources :events do
     resources :tickets do
     end
   end
+
+  match '*path' => 'application#error404', via: :all
 end
