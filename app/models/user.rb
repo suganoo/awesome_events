@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-class User < ApplicationRecord
+class User < ApplicationRecord::Base
   before_destroy :check_all_events_finished
 
   has_many :created_events, class_name: 'Event', foreign_key: :owner_id, dependent: :nullify

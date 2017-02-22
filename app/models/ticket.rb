@@ -1,4 +1,4 @@
-class Ticket < ApplicationRecord
+class Ticket < ApplicationRecord::Base
   belongs_to :user
   belongs_to :event
 
