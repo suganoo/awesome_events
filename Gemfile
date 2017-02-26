@@ -7,15 +7,18 @@ end
 
 gem 'bootstrap', '~> 4.0.0.alpha4'
 
-gem 'omniauth', '~> 1.5.0'
+#gem 'omniauth', '~> 1.5.0'
+gem 'omniauth' #, '~> 1.5.0'
 gem 'omniauth-twitter', '~> 1.0.1'
 
-gem 'rack', '~> 2.0'
+#gem 'rack', '~> 2.0'
+gem 'rack' #, '~> 1.5.2'
 
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 
-gem 'carrierwave', '0.11.0'
+#gem 'carrierwave', '0.11.0'
+gem 'carrierwave' #, '0.11.0'
 gem 'mini_magick', '3.8.0'
 
 gem 'kaminari', '~> 0.15.1'
@@ -23,7 +26,8 @@ gem 'kaminari-bootstrap', '~> 3.0.1'
 gem "ransack", '~> 1.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.1'
+#gem 'rails', '~> 5.0.1'
+gem 'rails', '4.1.1'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', groups: %w(test development), require: false
@@ -61,7 +65,8 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+  #gem 'web-console', '>= 3.3.0'
+  gem 'web-console' #, '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'

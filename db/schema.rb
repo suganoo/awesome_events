@@ -14,11 +14,11 @@ ActiveRecord::Schema.define(version: 20170220161217) do
 
   create_table "events", force: :cascade do |t|
     t.integer  "owner_id"
-    t.string   "name",       null: false
-    t.string   "place",      null: false
-    t.datetime "start_time", null: false
-    t.datetime "end_time",   null: false
-    t.text     "content",    null: false
+    t.string   "name"
+    t.string   "place"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["owner_id"], name: "index_events_on_owner_id"
@@ -35,10 +35,10 @@ ActiveRecord::Schema.define(version: 20170220161217) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "provider",   null: false
-    t.string   "uid",        null: false
-    t.string   "nickname",   null: false
-    t.string   "image_url",  null: false
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "nickname"
+    t.string   "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["provider", "uid"], name: "index_users_on_provider_and_uid", unique: true
